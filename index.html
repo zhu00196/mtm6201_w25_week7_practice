@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>SVG-Scalable vector graphic</h1>
+            <img src="./images/myfirst.svg" alt="svg">
+            <!-- embed the svg  -->
+            <!-- group -->
+            <g></g> 
+            <svg version="1.1" height="200" viewbox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+                <!-- SVG graphic code here -->
+              <rect width="200" height="200" fill="#4dd0e1" rx="8" ry="8"
+              stroke="#818ccf" stroke-width="8"/>
+              <circle id="dot" cx="25" cy="25" r="25" fill="#d50000" /> 
+              <polyline  points="10,10 10,50 50,50, 50,100 100,100 100,150" fill="white" stroke="#ef898b" stroke-width="6"/>
+              <use xlink:href="#dot" x="100" y="100"/>
+              <use xlink:href="#dot" x="100" y="0"/>
+              <use xlink:href="#dot" x="0" y="100"/>
+            </svg>
+
+            <svg class="dicefive" width="1500" height="1000" viewBox="0 0 1500 1000">
+                <defs>
+                  <rect id="brick" width="200" height="100" fill="#CFBEE1"/>
+                  <circle id="ball" r="50" fill="#8CC9BB"/>
+                </defs>
+                <g>
+                <use xlink:href="#brick" x="200" y="250"/>
+                <use xlink:href="#ball" x="400" y="250"/>
+                <use xlink:href="#brick" x="250" y="300"/>
+                <use xlink:href="#ball" x="250" y="350"/>
+                </g>
+              </svg>
+
+            <!-- gradient and text -->
+            <SVG width="250" height="50" viewBox="0 0 250 50">
+                <defs>
+                    <linearGradient id="mygradient">
+                        <stop offset="0" stop-color="red"/>
+                        <stop offset="50" stop-color="black"/>
+                        <stop offset="100" stop-color="gold"/>
+                    </linearGradient>
+                </defs>
+                <text x="0" y="50" fill="url(#mygradient)" font-size="2.5rem">John Smith</text>
+            </SVG>
+            <!-- pattern and text -->
+            <SVG width="300" height="200" viewBox="0 0 300 200">
+                <defs>
+                    <pattern width="300" height="200" id="zigzag" patternUnits="userSpaceOnUse">
+                        <image href="https://unsplash.com/photos/a-man-flying-through-the-air-while-riding-a-snowboard-vIrsbgXSjj0"/>
+
+                    </pattern>
+                </defs>
+                <text x="0" y="100" font-size="3rem" fill="url(#zigzag)">pattern</text>
+            </SVG>
+            <!-- embeded code from a svg exported from illustrator -->
+             <div class="smily-wrap">
+                <svg id="smily" viewBox="0 0 487 484" width="487" height="484">
+                    <!-- <defs>
+                      <style>.cls-1{fill:#ffe269;}.cls-2{fill:#fff;}.cls-3{fill:#fcf0c0;}</style>
+                    </defs> -->
+                    <g id="face">
+                      <circle class="cls-1" cx="241" cy="243" r="234" />
+                    </g>
+                    <path id="mouth" class="cls-2" d="M100,292H381.79s-18,78-140.9,78S100,292,100,292Z" />
+                    <ellipse id="eye-l" class="cls-2" cx="141.5" cy="154" rx="37.5" ry="65" />
+                    <ellipse id="eye-r" class="cls-2" cx="342.5" cy="154" rx="37.5" ry="65" />
+                    <circle class="pupil" id="pupil-l" cx="137.5" cy="182.5" r="24.5" />
+                    <circle class="pupil" id="pupil-r" cx="337.5" cy="182.5" r="24.5" />
+                    <path id="eyelash-l" class="cls-3" d="M179,154c-37,2-37,0-75,0,0-35.9,16.79-65,37.5-65S179,118.1,179,154Z" />
+                    <path id="eyelash-r" class="cls-3" d="M380,154c-37,2-37,0-75,0,0-35.9,16.79-65,37.5-65S380,118.1,380,154Z" />
+                  </svg>
+             </div>
+
+
+        </div> 
+        
+        
+
+        
+    </body>
+
+</body>
+</html>

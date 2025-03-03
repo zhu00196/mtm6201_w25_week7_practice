@@ -1,0 +1,29 @@
+
+.dicefive g{
+    transition: all 0.4;
+    transform-origin: 100px 100px;
+}
+
+
+.dicefive:hover g{
+    transform:scale(1.2) rotate(2turn);
+}
+
+
+.cls-1{fill:red}
+.cls-2{fill:blue}
+.cls-3{fill:green}
+
+@keyframes move{
+    0%{transform: translate(0);}
+    50%{transform: translate(20px);}
+    100%{transform: translate(0);}
+}
+
+.pupil{
+    animation: move 1s infinite;
+}
+
+.smily-wrap:hover .pupil{
+    animation-play-state: paused;
+}

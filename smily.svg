@@ -1,0 +1,15 @@
+﻿<svg id="smily" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487 484" width="487" height="484">
+  <defs>
+    <style>.cls-1{fill:#ffe269;}.cls-2{fill:#fff;}.cls-3{fill:#fcf0c0;}</style>
+  </defs>
+  <g id="face">
+    <circle class="cls-1" cx="241" cy="243" r="234" />
+  </g>
+  <path id="mouth" class="cls-2" d="M100,292H381.79s-18,78-140.9,78S100,292,100,292Z" />
+  <ellipse id="eye-l" class="cls-2" cx="141.5" cy="154" rx="37.5" ry="65" />
+  <ellipse id="eye-r" class="cls-2" cx="342.5" cy="154" rx="37.5" ry="65" />
+  <circle id="pupil-l" cx="137.5" cy="182.5" r="24.5" />
+  <circle id="pupil-r" cx="337.5" cy="182.5" r="24.5" />
+  <path id="eyelash-l" class="cls-3" d="M179,154c-37,2-37,0-75,0,0-35.9,16.79-65,37.5-65S179,118.1,179,154Z" />
+  <path id="eyelash-r" class="cls-3" d="M380,154c-37,2-37,0-75,0,0-35.9,16.79-65,37.5-65S380,118.1,380,154Z" />
+</svg>
